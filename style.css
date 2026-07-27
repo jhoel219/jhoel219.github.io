@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* ===== PERFIL ===== */
+.profile {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    border-bottom: 2px solid #e9edf2;
+    padding-bottom: 2rem;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3b82f6;
+    margin-bottom: 1rem;
+}
+
+.profile h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.profile .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3b82f6;
+    margin: 0.25rem 0 0.5rem;
+}
+
+.profile .location {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.social a {
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 500;
+    background: #f1f5f9;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    transition: background 0.2s, color 0.2s;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.social a:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    border-left: 6px solid #3b82f6;
+    padding-left: 0.8rem;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+h2 i {
+    color: #3b82f6;
+    font-size: 1.6rem;
+}
+
+/* ===== RESUMEN ===== */
+.summary p {
+    background: #f1f5f9;
+    padding: 1.2rem 1.5rem;
+    border-radius: 16px;
+    font-size: 1.05rem;
+    color: #1e293b;
+}
+
+/* ===== ITEMS (educación, experiencia) ===== */
+.item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item h3 span {
+    font-weight: 400;
+    color: #3b82f6;
+}
+
+.item .date {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0.2rem 0 0.6rem;
+}
+
+.item ul {
+    padding-left: 1.5rem;
+    color: #1e293b;
+}
+
+.item ul li {
+    margin-bottom: 0.3rem;
+}
+
+.education .item .institution {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-top: 0.1rem;
+}
+
+.education .item .institution span {
+    color: #3b82f6;
+}
+
+/* ===== HABILIDADES ===== */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.skill {
+    background: #e9edf2;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #0f172a;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.skill:hover {
+    background: #3b82f6;
+    color: white;
+    transform: scale(1.03);
+}
+
+/* ===== PROYECTOS ===== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.project-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e9edf2;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-card h3 i {
+    color: #3b82f6;
+    width: 1.4rem;
+}
+
+.project-card p {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-card a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Tarjeta destacada para la Shiny App */
+.project-card.highlight {
+    background: #eff6ff;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.project-card.highlight h3 i {
+    color: #2563eb;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    border-top: 1px solid #e9edf2;
+    padding-top: 1.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+    .profile h1 {
+        font-size: 2rem;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
